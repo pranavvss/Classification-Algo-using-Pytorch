@@ -10,9 +10,7 @@ Here is the link to -  [Data Set](https://www.kaggle.com/datasets/sumn2u/riped-a
 Make sure to change the path of the data set in the script.
 -----------------------------------------------------------------------
 
-General we are following (Just an overview)
-
-Steps
+General Steps we are following (Just an overview)
 
 1. Problem Statement Hypothetical Business Situation: Tomato Classification Model Background You are working as a data scientist for "FreshHarvest Inc.," a leading agricultural technology company that specializes in providing innovative solutions to improve crop yield and quality. The company has recently partnered with several large tomato farms to help them automate the sorting process of ripe and unripe tomatoes. The goal is to build an accurate and efficient classification model to distinguish between ripe and unripe tomatoes, ensuring that only the best quality produce reaches the market. Business Need Tomato sorting is currently done manually, which is time-consuming, labor-intensive, and prone to human error. FreshHarvest Inc. aims to implement an automated system that uses computer vision and machine learning to classify tomatoes based on ripeness. This system will reduce labor costs, increase sorting speed, and improve the overall quality of tomatoes sent to market.
 
