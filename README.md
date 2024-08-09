@@ -29,4 +29,8 @@ General Steps we are following (Just an overview)
 8. Deploy! model.save_dict()
 
 
+### GOAL 
+My goal is to reach above 90% accuracy with my model.
 
+### GOAL ACHIEVED
+My model was able to achieve 83% accuracy.
