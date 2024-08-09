@@ -1,15 +1,15 @@
 # Classification-Algo-using-Pytorch
 An object classification model built using Pytorch to detect quality of tomatoes. Dataset was taken from www.kaggle.com, and model was trained in google colab.
+
 -----------------------------------------------------------------------
-I was not able to upload the data set as the file to was too large. If you want the exact set of data with which i am working.
+I was not able to upload the data set as the file was too large. If you want the exact set of data with which i am working.
 Here is the link to -  [Data Set](https://www.kaggle.com/datasets/sumn2u/riped-and-unriped-tomato-dataset).
 
-
-## NOTE 
+### NOTE 
 
 Make sure to change the path of the data set in the script.
-
 -----------------------------------------------------------------------
+
 General we are following (Just an overview)
 
 Steps
