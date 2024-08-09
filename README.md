@@ -29,6 +29,25 @@ General Steps we are following (Just an overview)
 8. Deploy! model.save_dict()
 
 
+-----------------------------------------------------------------------
+
+### Technical Steps:
+
+Step 1: We have to create a dataset -> dataloader
+It's important to preprocess the data
+
+Step 2: visualize the images with it's corresponding labels.
+
+Step 3: Create a model
+- You either choose a model (If you are a beginner, you should choose a pre exisiting model.
+- Or Build a model
+
+Step 4: Depending on overfitting / underfitting
+- Tweak the learnable parameters.
+
+Step 5: Use Integral attribution to explain features.
+-----------------------------------------------------------------------
+
 ### GOAL 
 My goal is to reach above 90% accuracy with my model.
 
