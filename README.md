@@ -39,7 +39,7 @@ It's important to preprocess the data
 Step 2: visualize the images with it's corresponding labels.
 
 Step 3: Create a model
-- You either choose a model (If you are a beginner, you should choose a pre exisiting model.
+- You either choose a model (If you are a beginner, you should choose a pre exisiting model.)
 - Or Build a model
 
 Step 4: Depending on overfitting / underfitting
