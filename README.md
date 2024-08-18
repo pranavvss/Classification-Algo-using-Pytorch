@@ -1,4 +1,8 @@
 # Classification-Algo-using-Pytorch
+
+> [!NOTE]
+> Not for beginners
+
 An object classification model built using Pytorch to detect quality of tomatoes. Dataset was taken from www.kaggle.com, and model was trained in google colab.
 
 -----------------------------------------------------------------------
