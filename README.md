@@ -3,10 +3,6 @@ Image Classification using Pytorch & OpenCV (Deep Learning)
 > [!NOTE]
 > Not for beginners
 
-**Description**
-
-A deep learning model developed to classify tomatoes as either ripe or unripe using computer vision techniques. The project was inspired by the need to automate the sorting process in agricultural industries, particularly in the context of “FreshHarvest Inc.,” a hypothetical company that aims to improve crop yield and quality through advanced technology. The model leverages a Convolutional Neural Network (CNN) and employs techniques such as transfer learning using ResNet50, data augmentation, and integrated gradients for model interpretability. The model’s training process is monitored using TensorBoard to visualize training and validation losses, helping to ensure optimal model performance. Dataset was taken from www.kaggle.com, and model was trained in google colab.
-
 -----------------------------------------------------------------------
 
 Outcome
@@ -19,9 +15,21 @@ Outcome
 
 -----------------------------------------------------------------------
 
-**Objective**
+**Description**
 
-The objective of this project is to automate the tomato sorting process, reducing human labor and errors while increasing the speed and accuracy of sorting. The model is designed to identify ripe and unripe tomatoes, contributing to the improvement of agricultural processes and reducing the number of tomatoes incorrectly sorted due to human error.
+A deep learning model developed to classify tomatoes as either ripe or unripe using computer vision techniques. The project was inspired by the need to automate the sorting process in agricultural industries, particularly in the context of “FreshHarvest Inc.,” a hypothetical company that aims to improve crop yield and quality through advanced technology. The model leverages a Convolutional Neural Network (CNN) and employs techniques such as transfer learning using ResNet50, data augmentation, and integrated gradients for model interpretability. The model’s training process is monitored using TensorBoard to visualize training and validation losses, helping to ensure optimal model performance. Dataset was taken from www.kaggle.com, and model was trained in google colab.
+
+-----------------------------------------------------------------------
+
+**Highly Recommended books (You must learn to master Deep learning, Tensor Flow, Data Science)**
+
+- Python Data Science Handbook: Essential Tools For Working With Data by Jake VanderPlas
+- HANDS ON MACHINE LEARNING WITH SCIKIT LEARN, KERAS & TENSORFLOW 2 by Aurelien Geron
+  (This book is in two parts the second part is more important it talks about Tensorflow basics-advance, Here you'll learn RNN, CNN, Neural Networks etc)
+
+- Read a paper which is very important (Attention is all you need) 
+ [Link to the Document](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf)
+
 
 -----------------------------------------------------------------------
 
