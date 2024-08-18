@@ -107,7 +107,7 @@ There are several reasons why old versions of models and weights are maintained 
    
 -----------------------------------------------------------------------
 
-# what is quantized machine learning/ quantized weights
+## what is quantized machine learning/ quantized weights
 
 Quantization has couple benefits and concepts:
 
@@ -146,7 +146,7 @@ PyTorch supports INT8 quantization compared to regular FP32 models(float) for a 
 
 -----------------------------------------------------------------------
 
-# How quantization works:
+## How quantization works:
 
 Symmetric quantization:
 The range of the floating-point numbers is symmetrically distributed around zero.
@@ -201,7 +201,7 @@ z = is the real number zero. z = for symmetric quantization, the zero point is u
 
 -----------------------------------------------------------------------
 
-# Quantization-Aware Training (Pre quantization)
+## Quantization-Aware Training (Pre quantization)
 
 During training, quantization-aware training (QAT) simulates quantization effects in the forward and backward passes to improve the robustness of the model when weights and activations are quantized during inference.
 
@@ -215,7 +215,7 @@ Gradient Propagation: During backpropagation, gradients are calculated based on 
 
 -----------------------------------------------------------------------
 
-# Post Quantization
+## Post Quantization
 
 Post-training quantization (PTQ) involves training the model with full precision and then quantizing it afterward. This can be done in several ways:
 
@@ -225,7 +225,7 @@ Dynamic Quantization: Quantize weights statically but dynamically quantize activ
 
 -----------------------------------------------------------------------
 
-# Pre-training Quantization 
+## Pre-training Quantization 
 
 Pre-training quantization is the process of training a neural network directly with quantized weights and activations from the beginning. This approach is also known as Quantization-Aware Training (QAT).
 
