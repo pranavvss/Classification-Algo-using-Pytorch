@@ -3,7 +3,9 @@ Image Classification using Pytorch & OpenCV (Deep Learning)
 > [!NOTE]
 > Not for beginners
 
-An object classification model built using Pytorch and computer vision to detect quality of tomatoes. Dataset was taken from www.kaggle.com, and model was trained in google colab.
+**Description**
+
+A deep learning model developed to classify tomatoes as either ripe or unripe using computer vision techniques. The project was inspired by the need to automate the sorting process in agricultural industries, particularly in the context of “FreshHarvest Inc.,” a hypothetical company that aims to improve crop yield and quality through advanced technology. The model leverages a Convolutional Neural Network (CNN) and employs techniques such as transfer learning using ResNet50, data augmentation, and integrated gradients for model interpretability. The model’s training process is monitored using TensorBoard to visualize training and validation losses, helping to ensure optimal model performance. Dataset was taken from www.kaggle.com, and model was trained in google colab.
 
 -----------------------------------------------------------------------
 
@@ -15,14 +17,37 @@ Outcome
 
 ![image](https://github.com/user-attachments/assets/fee2b106-fce8-47bf-9f77-04ac48b872d1)
 
+-----------------------------------------------------------------------
+
+**Objective**
+
+The objective of this project is to automate the tomato sorting process, reducing human labor and errors while increasing the speed and accuracy of sorting. The model is designed to identify ripe and unripe tomatoes, contributing to the improvement of agricultural processes and reducing the number of tomatoes incorrectly sorted due to human error.
+
+-----------------------------------------------------------------------
+
+**Requirements**
+
+To run this project, ensure that your environment meets the following requirements:
+
+	•	Python 3.6 or higher
+	•	Torch 1.7.0 or higher
+	•	TorchVision 0.8.1 or higher
+	•	Captum 0.4.0 or higher
+	•	Pandas 1.1.5 or higher
+	•	Matplotlib 3.3.2 or higher
+	•	Pillow 7.2.0 or higher
+	•	Google Colab (for running the notebook)
+	•	TensorBoard 2.3.0 or higher (for visualizing the training process)
+ 
+-----------------------------------------------------------------------
 
 -----------------------------------------------------------------------
 I was not able to upload the data set as the file was too large. If you want the exact set of data with which i am working.
 Here is the link to -  [Data Set](https://www.kaggle.com/datasets/sumn2u/riped-and-unriped-tomato-dataset).
 
-## NOTE 
 
-Make sure to change the path of the data set in the script.
+-----------------------------------------------------------------------
+Git Clone the repository 
 -----------------------------------------------------------------------
 
 ## General Steps we are following (Just an overview)
