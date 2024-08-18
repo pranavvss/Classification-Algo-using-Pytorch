@@ -1,4 +1,4 @@
-# Classification-Algo-using-Pytorch
+Image Classification using Pytorch & OpenCV (Deep Learning)
 
 > [!NOTE]
 > Not for beginners
