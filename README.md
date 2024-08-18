@@ -49,6 +49,131 @@ Step 5: Use Integral attribution to explain features.
 
 -----------------------------------------------------------------------
 
+## Transfer Learning
+
+There's multipel versions of pretrained models for ResNet. V1 has less accuracy (the oldest version) and V2 has the newest version (the new veresion).
+
+There are several reasons why old versions of models and weights are maintained and made available even when newer versions with better performance exist. Here are some key reasons:
+
+1. Backward Compatibility Existing Workflows: Many organizations and developers have existing workflows, scripts, and models that rely on older versions of the weights. Updating these workflows to use newer versions might require significant changes and testing. Reproducibility: Scientific research and publications often cite specific versions of models and weights. Keeping older versions ensures that results can be reproduced and validated by others.
+
+2. Performance Trade-offs Inference Speed: In some cases, newer versions of weights might provide better accuracy but at the cost of increased computational resources or longer inference times. Users might prefer older versions for applications where speed is more critical than accuracy. Memory Usage: Newer models might require more memory, making them unsuitable for deployment on devices with limited resources.
+
+3. Baseline Comparisons Benchmarking: Older versions serve as baselines for comparing the performance of new models and weights. This is crucial for understanding the improvements and trade-offs of newer versions. Algorithm Development: Researchers and developers often need to compare their new algorithms against established baselines to demonstrate improvements.
+
+4. Model Training and Fine-Tuning Transfer Learning: Some users may prefer to start with older weights for specific transfer learning tasks, depending on the characteristics of their datasets or the specific features learned by the older weights. Training Stability: Older weights might be preferred in certain scenarios where they have shown to provide more stable training or convergence properties for specific tasks.
+
+5. Historical Context Legacy Systems: Some legacy systems and applications are built with older versions of models. Changing these systems might not be feasible due to regulatory, technical, or financial constraints. Documentation and Tutorials: Many educational resources, tutorials, and documentation are built around older versions of models. Maintaining these versions ensures that learners and practitioners can follow along with existing educational material.
+   
+-----------------------------------------------------------------------
+
+# what is quantized machine learning/ quantized weights
+
+Quantization has couple benefits and concepts:
+
+1. Floating point to integer:
+-quantization typically involves converting 32-bit floating point numbers (FP32) to lower precision formats such as 8 bits (INT8).
+
+2. Efficiency improvement: Memory Footprint: Lower precision numbers require less memory, leading to a reduced memory footprint for the model. Inference Speed: Integer arithmetic operations are faster and more power-efficient than floating-point operations, resulting in faster inference times and lower power consumption.
+   
+3. Types of quantization:
+- post: the model is trained in full precision and quantization is applied after training. Small loss of accuracy but simpler.
+
+- pre(quantization aware training): Model is trained with quantization in mind, simulating the effects of quantization during the training process. Preserves more accuracy.
+
+- se Cases:
+Good for mobile devices/applications where computational power and battery life are constrained.
+
+- Use Cases:
+Regular Weights: Preferred for training and tasks requiring high precision and large computational resources. Quantized Weights: Preferred for deployment and inference on resource-constrained devices where speed and efficiency are prioritized over minimal accuracy loss.
+
+Quantized Weights: Often require a process called Quantization Aware Training (QAT) or post-training quantization to convert the FP32 weights to INT8 while attempting to minimize the impact on model accuracy.
+
+Example in Context For instance, in the context of the MobileNetV3
+
+model: MobileNet_V3_Large_QuantizedWeights.
+
+IMAGENET1K_QNNPACK_V1:
+
+These quantized weights are optimized for inference on CPUs using QNNPACK backend, suitable for mobile and edge devices.
+
+MobileNet_V3_Large_Weights.
+
+IMAGENET1K_V2: These are regular FP32 weights, providing slightly better accuracy and suitable for environments where computational resources are less constrained.
+
+Important Note about quantization
+PyTorch supports INT8 quantization compared to regular FP32 models(float) for a 4x reducton in the model size and 4x reduction in memory bandwidth requirements.
+
+How quantization works:
+Symmetric quantization:
+The range of the floating-point numbers is symmetrically distributed around zero.
+
+Scaling factor:
+s = max(abs(min), abs(max)) / (2^b-1 - 1)
+
+zero point = z = 0
+
+quantization: q = round(x/s)
+
+dequantization:
+
+x = q * s
+
+Asymmetric quantization:
+In asymmetric quantization, the range of the floating-point numbers is not necessarily centered around zero. This approach uses a zero point to handle cases where the distribution of values does not include zero or is not symmetric around zero.
+
+Scaling factor:
+s = (max - min) / (2^b - 1)
+
+Zero Point: z = round(-min/s)
+quantization: q = round(x/s) + z
+
+dequatization: x = (q-z)*s
+
+''''''''''''''''''''''''''''''''''''general equation underneath:----------
+
+The linear quantization:
+
+q = round((x - min)÷s)
+
+When we linearly dequantize:
+
+x = q * s + min
+
+s - Scaling value
+
+This is the most important parameter.
+
+s = (max-min)/(2^b - 1)
+
+if you want 8 bit quantization, you put 8 in the b.
+
+min = -0.8, max = 0.6
+
+s = (0.6-(-0.8)) / 255 = 1.4/255 = 0.0055
+
+Zero Point (z):
+
+z = is the real number zero. z = for symmetric quantization, the zero point is usually zero. For asymmetric, it is z = -min/s
+
+Quantization-Aware Training (Pre quantization)
+During training, quantization-aware training (QAT) simulates quantization effects in the forward and backward passes to improve the robustness of the model when weights and activations are quantized during inference.
+
+Fake Quantization: In QAT, "fake" quantization is applied where values are quantized and dequantized during training:
+
+quantized x = s * round(x/s)
+
+This ensures that the model learns weights that are robust to quantization.
+
+Gradient Propagation: During backpropagation, gradients are calculated based on the fake quantized values, allowing the model to adjust the weights to minimize the quantization error.
+
+Post Quantization
+Post-training quantization (PTQ) involves training the model with full precision and then quantizing it afterward. This can be done in several ways:
+
+Static Quantization: Calibrate the model using a representative dataset to determine the appropriate scale and zero points.
+
+Dynamic Quantization: Quantize weights statically but dynamically quantize activations during inference.
+
 ### GOAL 
 My goal is to reach above 90% accuracy with my model.
 
