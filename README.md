@@ -3,7 +3,18 @@
 > [!NOTE]
 > Not for beginners
 
-An object classification model built using Pytorch to detect quality of tomatoes. Dataset was taken from www.kaggle.com, and model was trained in google colab.
+An object classification model built using Pytorch and computer vision to detect quality of tomatoes. Dataset was taken from www.kaggle.com, and model was trained in google colab.
+
+-----------------------------------------------------------------------
+
+Outcome
+
+(losses started relatively high and decrease over time, this indicates the model was learning and improving its predictions).
+
+![image](https://github.com/user-attachments/assets/68d0f9c2-a6f7-4825-b768-71458982c9a1)
+
+![image](https://github.com/user-attachments/assets/fee2b106-fce8-47bf-9f77-04ac48b872d1)
+
 
 -----------------------------------------------------------------------
 I was not able to upload the data set as the file was too large. If you want the exact set of data with which i am working.
@@ -186,6 +197,16 @@ Post-training quantization (PTQ) involves training the model with full precision
 Static Quantization: Calibrate the model using a representative dataset to determine the appropriate scale and zero points.
 
 Dynamic Quantization: Quantize weights statically but dynamically quantize activations during inference.
+
+-----------------------------------------------------------------------
+
+# Pre-training Quantization 
+
+Pre-training quantization is the process of training a neural network directly with quantized weights and activations from the beginning. This approach is also known as Quantization-Aware Training (QAT).
+
+Post-training Quantization Post-training quantization is the process of converting a fully trained model (using full precision weights) to a quantized version after the training has completed. This is also known as Post-Training Quantization (PTQ).
+
+Pre-training Quantization (QAT) involves training a model with quantization effects simulated during training, allowing the model to learn and adjust for quantization-induced errors, often resulting in higher accuracy for the quantized model. Post-training Quantization (PTQ) involves converting a fully trained model to a quantized version, offering simplicity and flexibility at the potential cost of a slight drop in accuracy, which can be mitigated using calibration techniques.
 
 -----------------------------------------------------------------------
 
