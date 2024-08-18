@@ -104,7 +104,10 @@ IMAGENET1K_V2: These are regular FP32 weights, providing slightly better accurac
 Important Note about quantization
 PyTorch supports INT8 quantization compared to regular FP32 models(float) for a 4x reducton in the model size and 4x reduction in memory bandwidth requirements.
 
-How quantization works:
+-----------------------------------------------------------------------
+
+# How quantization works:
+
 Symmetric quantization:
 The range of the floating-point numbers is symmetrically distributed around zero.
 
@@ -156,7 +159,10 @@ Zero Point (z):
 
 z = is the real number zero. z = for symmetric quantization, the zero point is usually zero. For asymmetric, it is z = -min/s
 
-Quantization-Aware Training (Pre quantization)
+-----------------------------------------------------------------------
+
+# Quantization-Aware Training (Pre quantization)
+
 During training, quantization-aware training (QAT) simulates quantization effects in the forward and backward passes to improve the robustness of the model when weights and activations are quantized during inference.
 
 Fake Quantization: In QAT, "fake" quantization is applied where values are quantized and dequantized during training:
@@ -167,12 +173,17 @@ This ensures that the model learns weights that are robust to quantization.
 
 Gradient Propagation: During backpropagation, gradients are calculated based on the fake quantized values, allowing the model to adjust the weights to minimize the quantization error.
 
-Post Quantization
+-----------------------------------------------------------------------
+
+# Post Quantization
+
 Post-training quantization (PTQ) involves training the model with full precision and then quantizing it afterward. This can be done in several ways:
 
 Static Quantization: Calibrate the model using a representative dataset to determine the appropriate scale and zero points.
 
 Dynamic Quantization: Quantize weights statically but dynamically quantize activations during inference.
+
+-----------------------------------------------------------------------
 
 ### GOAL 
 My goal is to reach above 90% accuracy with my model.
