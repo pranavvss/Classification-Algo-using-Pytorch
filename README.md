@@ -22,7 +22,7 @@ Formula used - Gray = 0.2989 × R + 0.5870 × G + 0.1140 × B
 
 -----------------------------------------------------------------------
 
-**Highly Recommended books (You must learn to master Deep learning, Tensor Flow, Data Science)**
+**Highly Recommended books (You must read to master Deep learning, Tensor Flow, Data Science)**
 
 - Python Data Science Handbook: Essential Tools For Working With Data by Jake VanderPlas
 - HANDS ON MACHINE LEARNING WITH SCIKIT LEARN, KERAS & TENSORFLOW 2 by Aurelien Geron
