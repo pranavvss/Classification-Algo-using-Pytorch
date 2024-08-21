@@ -10,7 +10,6 @@ Outcome
 
 ![image](https://github.com/user-attachments/assets/68d0f9c2-a6f7-4825-b768-71458982c9a1)
 
-![image](https://github.com/user-attachments/assets/fee2b106-fce8-47bf-9f77-04ac48b872d1)
 
 -----------------------------------------------------------------------
 
