@@ -2,7 +2,7 @@ A deep learning model developed to classify tomatoes as either ripe or unripe us
 
 **At a bigger scale it is entirely feasible to integrate this tomato classification model with an AI-driven machine (Robots), leveraging OpenCV for real-time image processing and control.**
 
-<img src="https://github.com/user-attachments/assets/9b8a25a4-6c43-428a-86c5-be83a97f235f" alt="drawing" style="width:700px;"/>
+<img src="https://github.com/user-attachments/assets/9b8a25a4-6c43-428a-86c5-be83a97f235f" alt="drawing" style="width:550px;"/>
 
 -----------------------------------------------------------------------
 
