@@ -2,7 +2,7 @@
 
 A deep learning model developed to classify tomatoes as either ripe or unripe using computer vision techniques. The project was inspired by the need to automate the sorting process in agricultural industries, particularly in the context of “FreshHarvest Inc.,” a hypothetical company that aims to improve crop yield and quality through advanced technology. The model leverages a Convolutional Neural Network (CNN) and employs techniques such as transfer learning using ResNet50, data augmentation, and integrated gradients for model interpretability. The model’s training process is monitored using TensorBoard to visualize training and validation losses, helping to ensure optimal model performance. Dataset was taken from www.kaggle.com, and model was trained in google colab.
 
-At a bigger scale it is entirely feasible to integrate this tomato classification model with an AI-driven machine (Robots), leveraging OpenCV for real-time image processing and control.
+**At a bigger scale it is entirely feasible to integrate this tomato classification model with an AI-driven machine (Robots), leveraging OpenCV for real-time image processing and control.**
 
 -----------------------------------------------------------------------
 
