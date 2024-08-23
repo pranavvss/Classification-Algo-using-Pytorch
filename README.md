@@ -3,8 +3,7 @@ A deep learning model developed to classify tomatoes as either ripe or unripe us
 -----------------------------------------------------------------------
 
 **At a bigger scale it is entirely feasible to integrate this tomato classification model with an AI-driven machine (Robots), leveraging OpenCV for real-time image processing and control.**
-
--- I could have made a prototype for this but to be honest I cant afford buying materials to build an robot arm. --
+I could have made a prototype for this but to be honest I cant afford buying materials to build an robot arm.
 
 -----------------------------------------------------------------------
 
@@ -60,6 +59,7 @@ To run this project, ensure that your environment meets the following requiremen
 
 I was not able to upload the data set as the file was too large. If you want the exact set of data with which i am working.
 Here is the link to -  [Data Set](https://www.kaggle.com/datasets/sumn2u/riped-and-unriped-tomato-dataset).
+
 -----------------------------------------------------------------------
 
 ## General Steps we are following (Just an overview)
