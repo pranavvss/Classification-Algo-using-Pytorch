@@ -1,5 +1,7 @@
 A deep learning model developed to classify tomatoes as either ripe or unripe using computer vision techniques. The project was inspired by the need to automate the sorting process in agricultural industries, particularly in the context of “FreshHarvest Inc.,” a hypothetical company that aims to improve crop yield and quality through advanced technology. The model leverages a Convolutional Neural Network (CNN) and employs techniques such as transfer learning using ResNet50, data augmentation, and integrated gradients for model interpretability. The model’s training process is monitored using TensorBoard to visualize training and validation losses, helping to ensure optimal model performance. Dataset was taken from www.kaggle.com, and model was trained in google colab.
 
+-----------------------------------------------------------------------
+
 **At a bigger scale it is entirely feasible to integrate this tomato classification model with an AI-driven machine (Robots), leveraging OpenCV for real-time image processing and control.**
 
 -- I could have made a prototype for this but to be honest I cant afford buying materials to build an robot arm. --
@@ -10,16 +12,14 @@ A deep learning model developed to classify tomatoes as either ripe or unripe us
 
 -----------------------------------------------------------------------
 
-Outcome
-
-(losses started relatively high and decrease over time, this indicates the model was learning and improving its predictions).
+Outcome - (losses started relatively high and decrease over time, this indicates the model was learning and improving its predictions).
 
 ![image](https://github.com/user-attachments/assets/68d0f9c2-a6f7-4825-b768-71458982c9a1)
 
 
 -----------------------------------------------------------------------
 
-grayscale usuage (It helps us to simplify an image by reducing the complexity of color information, which is an important part of this project).
+**Grayscale usuage** (It helps us to simplify an image by reducing the complexity of color information, which is an important part of this project).
 
 **Formula used - Gray = 0.2989 × R + 0.5870 × G + 0.1140 × B**
 
@@ -57,12 +57,9 @@ To run this project, ensure that your environment meets the following requiremen
 -----------------------------------------------------------------------
 
 -----------------------------------------------------------------------
+
 I was not able to upload the data set as the file was too large. If you want the exact set of data with which i am working.
 Here is the link to -  [Data Set](https://www.kaggle.com/datasets/sumn2u/riped-and-unriped-tomato-dataset).
-
-
------------------------------------------------------------------------
-Git Clone the repository 
 -----------------------------------------------------------------------
 
 ## General Steps we are following (Just an overview)
