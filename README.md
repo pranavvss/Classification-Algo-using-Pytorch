@@ -4,6 +4,8 @@ A deep learning model developed to classify tomatoes as either ripe or unripe us
 
 -- I could have made a prototype for this but to be honest I cant afford buying materials to build an robot arm. --
 
+-----------------------------------------------------------------------
+
 <img src="https://github.com/user-attachments/assets/9b8a25a4-6c43-428a-86c5-be83a97f235f" alt="drawing" style="width:550px;"/>
 
 -----------------------------------------------------------------------
@@ -168,17 +170,13 @@ s = max(abs(min), abs(max)) / (2^b-1 - 1)
 
 zero point = z = 0
 
-quantization: q = round(x/s)
+- quantization: q = round(x/s)
 
-dequantization:
+- dequantization: x = q * s
 
-x = q * s
+- Asymmetric quantization: In asymmetric quantization, the range of the floating-point numbers is not necessarily centered around zero. This approach uses a zero point to handle cases where the distribution of values does not include zero or is not symmetric around zero.
 
-Asymmetric quantization:
-In asymmetric quantization, the range of the floating-point numbers is not necessarily centered around zero. This approach uses a zero point to handle cases where the distribution of values does not include zero or is not symmetric around zero.
-
-Scaling factor:
-s = (max - min) / (2^b - 1)
+Scaling factor: s = (max - min) / (2^b - 1)
 
 Zero Point: z = round(-min/s)
 quantization: q = round(x/s) + z
