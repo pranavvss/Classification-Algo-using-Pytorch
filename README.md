@@ -16,6 +16,7 @@ Outcome
 
 ![image](https://github.com/user-attachments/assets/68d0f9c2-a6f7-4825-b768-71458982c9a1)
 
+
 -----------------------------------------------------------------------
 
 grayscale usuage (It helps us to simplify an image by reducing the complexity of color information, which is an important part of this project).
@@ -23,7 +24,7 @@ grayscale usuage (It helps us to simplify an image by reducing the complexity of
 **Formula used - Gray = 0.2989 × R + 0.5870 × G + 0.1140 × B**
 
 ![image](https://github.com/user-attachments/assets/121fd512-634a-415b-9324-0882f552ef97)
-![image](https://github.com/user-attachments/assets/179f8edb-85dc-46e4-8a05-ab45267f1ba0)
+![image](https://github.com/user-attachments/assets/ca8650e8-e4ba-4c0e-8fcd-8480a60e8ba6)
 
 -----------------------------------------------------------------------
 
